@@ -1,0 +1,1770 @@
+service { 'ModemManager.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'NetworkManager-dispatcher.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'NetworkManager-wait-online.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'NetworkManager.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'accounts-daemon.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'acpid':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'acpid.service':
+  ensure   => 'running',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'alsa-restore.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'alsa-state.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'alsa-utils':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'alsa-utils.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'anacron':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'anacron.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'apache-htcacheclean':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'debian',
+}
+service { 'apache-htcacheclean.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'apache-htcacheclean@.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'apache2':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'apache2.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'apache2@.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'apparmor':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'apparmor.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'apport':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'apport-autoreport.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'apport-forward@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'apt-daily-upgrade.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'apt-daily.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'auth-rpcgss-module.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'autovt@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'avahi-daemon':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'avahi-daemon.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'binfmt-support':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'binfmt-support.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'blk-availability.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'bluetooth':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'bluetooth.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'bolt.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'bootlogd.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'bootlogs.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'bootmisc.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'brltty-udev.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'brltty.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'certbot.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'cgroupfs-mount':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'cgroupfs-mount.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'checkfs.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'checkroot-bootclean.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'checkroot.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'clean-mount-point@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'cockpit.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'colord.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'configure-printer@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'console-getty.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'console-setup.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'console-setup.sh':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'container-getty@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'containerd.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'cron':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'cron.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'cryptdisks':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'cryptdisks-early':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'cryptdisks-early.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'cryptdisks.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'cups':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'cups-browsed':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'cups-browsed.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'cups.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dbus':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'dbus-fi.w1.wpa_supplicant1.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dbus-org.bluez.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dbus-org.freedesktop.Avahi.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dbus-org.freedesktop.ModemManager1.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dbus-org.freedesktop.hostname1.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dbus-org.freedesktop.locale1.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dbus-org.freedesktop.login1.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dbus-org.freedesktop.nm-dispatcher.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dbus-org.freedesktop.resolve1.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dbus-org.freedesktop.thermald.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dbus-org.freedesktop.timedate1.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dbus.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'debug-shell.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'display-manager.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dm-event.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'dns-clean':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'dns-clean.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'docker':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'docker.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'ebtables':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'ebtables.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'emergency.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'friendly-recovery.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'fstrim.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'fuse.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'fwupd-offline-update.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'fwupd.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'gdm.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'gdm3':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'gdm3.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'geoclue.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'getty-static.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'getty@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'gpu-manager.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'grub-common':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'halt.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'hostname.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'hwclock.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'hwclock.sh':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'debian',
+}
+service { 'ifup@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'iio-sensor-proxy.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'initrd-cleanup.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'initrd-parse-etc.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'initrd-switch-root.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'initrd-udevadm-cleanup-db.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'irqbalance':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'irqbalance.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'jenkins':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'debian',
+}
+service { 'kerneloops':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'kerneloops.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'kexec':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'kexec-load':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'keyboard-setup.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'keyboard-setup.sh':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'killprocs.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'kmod':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'kmod-static-nodes.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'kmod.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'libvirt-bin.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'libvirt-guests':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'libvirt-guests.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'libvirtd':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'libvirtd.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'lm-sensors':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'lm-sensors.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'lvm2':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'lvm2-lvmetad':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'lvm2-lvmetad.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'lvm2-lvmpolld':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'lvm2-lvmpolld.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'lvm2-monitor.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'lvm2-pvscan@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'lvm2.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'mdadm':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'mdadm-grow-continue@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'mdadm-last-resort@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'mdadm-shutdown.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'mdadm-waitidle':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'debian',
+}
+service { 'mdadm-waitidle.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'mdadm.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'mdmon@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'mdmonitor.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'module-init-tools.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'motd-news.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'motd.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'mountall-bootclean.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'mountall.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'mountdevsubfs.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'mountkernfs.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'mountnfs-bootclean.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'mountnfs.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'mysql':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'mysql.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'network-manager':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'network-manager.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'networkd-dispatcher.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'networking':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'networking.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'nfs-blkmap.service':
+  ensure   => 'running',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'nfs-common':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'nfs-common.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'nfs-config.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'nfs-idmapd.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'nfs-kernel-server':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'nfs-kernel-server.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'nfs-mountd.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'nfs-server.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'nfs-utils.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'nginx':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'nginx.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'ntopng':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'debian',
+}
+service { 'ntopng.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'ntp':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'ntp-systemd-netif.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'ntp.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'nvidia-persistenced.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'ondemand.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'packagekit-offline-update.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'packagekit.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'phpsessionclean.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'plymouth':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'plymouth-halt.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'plymouth-kexec.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'plymouth-log':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'plymouth-log.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'plymouth-poweroff.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'plymouth-quit-wait.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'plymouth-quit.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'plymouth-read-write.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'plymouth-reboot.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'plymouth-start.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'plymouth-switch-root.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'plymouth.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'polkit.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'portmap.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'pppd-dns':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'pppd-dns.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'procps':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'procps.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'puppet':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'puppet-master':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'puppet-master.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'puppet.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'puppetmaster.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'puppetserver':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'puppetserver.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'pxp-agent.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'qemu-kvm.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'quotaon.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'rc-local.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'rc.local.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'rc.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'rcS.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'reboot.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'redis-server':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'redis-server.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'redis-server@.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'redis.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'rescue.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'rmnologin.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'rpc-gssd.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'rpc-statd-notify.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'rpc-statd.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'rpc-svcgssd.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'rpcbind':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'rpcbind.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'rsync':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'rsync.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'rsyslog':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'rsyslog.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'rtkit-daemon.service':
+  ensure   => 'running',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'saned':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'saned.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'saned@.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'sendsigs.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'serial-getty@.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'setvtrgb.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'single.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'snapd.autoimport.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'snapd.core-fixup.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'snapd.failure.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'snapd.seeded.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'snapd.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'snapd.snap-repair.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'snapd.system-shutdown.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'speech-dispatcher':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'spice-vdagent':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'spice-vdagent.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'spice-vdagentd.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'ssh':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'ssh.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'ssh@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'sshd.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'stop-bootlogd-single.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'stop-bootlogd.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'sudo.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'syslog.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'sysstat':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'sysstat.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'system-update-cleanup.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-ask-password-console.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-ask-password-plymouth.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-ask-password-wall.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-backlight@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-binfmt.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-exit.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-fsck@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-fsckd.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-halt.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-hibernate-resume@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-hibernate.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-hostnamed.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-hwdb-update.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-hybrid-sleep.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-initctl.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-journal-flush.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-journald.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-kexec.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-localed.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-logind.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-machine-id-commit.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-modules-load.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-networkd-wait-online.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'systemd-networkd.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'systemd-poweroff.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-quotacheck.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-random-seed.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-reboot.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-remount-fs.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-resolved.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-rfkill.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-suspend-then-hibernate.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-suspend.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-sysctl.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-timedated.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-timesyncd.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'systemd-tmpfiles-clean.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-tmpfiles-setup-dev.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-tmpfiles-setup.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-udev-settle.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-udev-trigger.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-udevd.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-update-utmp-runlevel.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-update-utmp.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-user-sessions.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'systemd-volatile-root.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'teamviewerd.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'thermald.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'udev':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'udev.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'udisks2.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'ufw':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'ufw.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'umountfs.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'umountnfs.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'umountroot.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'unattended-upgrades':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'unattended-upgrades.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'upower.service':
+  ensure   => 'running',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'urandom.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'ureadahead-stop.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'ureadahead.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'usb_modeswitch@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'usbmuxd.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'user@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'uuidd':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'uuidd.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'vboxweb.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'virtlockd.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'virtlogd':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'virtlogd.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'virtualbox':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'vmware':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'vmware-USBArbitrator':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'vmware-workstation-server':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'vnstat':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'vnstat.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'vnstatd.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'wacom-inputattach@.service':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'webmin':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'whoopsie':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'whoopsie.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'wpa_supplicant-wired@.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'wpa_supplicant.service':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'systemd',
+}
+service { 'wpa_supplicant@.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}
+service { 'x11-common':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'x11-common.service':
+  ensure   => 'stopped',
+  enable   => 'false',
+  provider => 'systemd',
+}

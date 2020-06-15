@@ -1,0 +1,95 @@
+#node 'gutilug-VIT-E2250' { # Applies only to mentioned node. If nothing mentioned, applies to alli.
+####################################
+#Crear, bloquear y establecer clave a usuarios no roo
+####################################
+node default {
+  accounts::user { 'dan': }
+}
+accounts::user { 'morgan':
+  comment => 'Bad Person',
+  locked  => true
+}
+user { 'bob': 
+  ensure   => present,
+  password => '$1$.4YEDECx$WItKV5JYZjfVFtmmt3cSn.',
+}
+####################################
+#Gestoionar servicio SSH
+###################################
+class { 'ssh':
+  storeconfigs_enabled => false,
+  server_options => {
+    'Match User www-data' => {
+      'ChrootDirectory' => '%h',
+      'ForceCommand' => 'internal-sftp',
+      'PasswordAuthentication' => 'yes',
+      'AllowTcpForwarding' => 'no',
+      'X11Forwarding' => 'no',
+    },
+    'Port' => [22, 2222, 2288],
+  },
+  client_options => {
+    'Host *.amazonaws.com' => {
+      'User' => 'ec2-user',
+    },
+  },
+  users_client_options => {
+    'gutilug' => {
+      options => {
+        'Host *.alice.fr' => {
+          'User' => 'alice',
+        },
+      },
+    },
+  },
+}
+####################################
+#Gestion servio NTP
+###################################
+include '::ntp'
+#####################################
+#Gestionar Apache
+######################################
+class { 'apache':
+  default_vhost     => false,
+  default_ssl_vhost => false,
+}
+apache::vhost { 'www.dominio1.com':
+  port    => '84',
+  docroot => '/var/www/html',
+}
+apache::vhost { 'www.dominio2.com':
+  ip      => '127.0.0.1',
+  port    => '81',
+  docroot => '/var/www/html2',
+}
+apache::vhost { 'www.dominio3.com':
+  ip      => '127.0.0.1',
+  port    => '82',
+  docroot => '/var/www/html3',
+}
+
+class { 'apache::mod::ssl': }
+#####################################
+#Crear archivo en una ruta
+####################################
+    file { '/home/test': # Resource type file
+
+            ensure => 'directory', # Create a directory
+
+            owner => 'root', # Ownership
+
+            group => 'root', # Group Name
+
+            mode => '0755', # Directory permissions
+
+         }
+####################################
+include profile::hiera_test
+####################################
+#Gestionar Servicio NGINX
+###################################
+nginx::resource::server { 'kibana.myhost.com':
+  listen_port => 80,
+  proxy       => 'http://localhost:84',
+}

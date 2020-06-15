@@ -1,0 +1,4 @@
+---
+profile::webserver::example::ips:
+ - '0.0.0.0'
+ - '::

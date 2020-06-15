@@ -1,0 +1,59 @@
+#####################################
+#2. Puppet Resource File Example
+#####################################
+file { "/var/tmp/testfile":
+        ensure => "present",
+        owner => "root",
+        group => "root",
+        mode => "664",
+        content => "This is a test file created using puppet.
+                    Puppet is really cool",
+}
+#####################################
+#4. Control a Service on a Remote Node using Puppet
+####################################
+# puppet resource service ntp
+service { 'ntp':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'apache2':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'nginx':
+  ensure   => 'stopped',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'cron':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+service { 'rsyslog':
+  ensure   => 'running',
+  enable   => 'true',
+  provider => 'debian',
+}
+#####################################
+#5. Install a Package on a Remote Node using Puppet
+#####################################
+package { 'apache2':
+  ensure   => 'present',
+}
+#########################################
+#7. Puppet Class Collection Example
+########################################
+class apache {
+        package { 'httpd':
+           ensure => 'present',
+                }
+        service {'httpd':
+           ensure => 'running',
+           require => Package["httpd"],
+           }
+}
+include apache

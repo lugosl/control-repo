@@ -1,0 +1,4 @@
+---
+profile::hiera_test::ssl: false
+profile::hiera_test::backups_enabled: true
+# --Nothing. Just use the default parameter values.

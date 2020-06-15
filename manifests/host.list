@@ -1,0 +1,76 @@
+host { 'debian':
+  ensure   => 'present',
+  ip       => '172.16.98.140',
+  provider => 'parsed',
+  target   => '/etc/hosts',
+}
+host { 'ip6-allnodes':
+  ensure   => 'present',
+  ip       => 'ff02::1',
+  provider => 'parsed',
+  target   => '/etc/hosts',
+}
+host { 'ip6-allrouters':
+  ensure   => 'present',
+  ip       => 'ff02::2',
+  provider => 'parsed',
+  target   => '/etc/hosts',
+}
+host { 'ip6-localhost':
+  ensure       => 'present',
+  host_aliases => ['ip6-loopback'],
+  ip           => '::1',
+  provider     => 'parsed',
+  target       => '/etc/hosts',
+}
+host { 'ip6-localnet':
+  ensure   => 'present',
+  ip       => 'fe00::0',
+  provider => 'parsed',
+  target   => '/etc/hosts',
+}
+host { 'ip6-mcastprefix':
+  ensure   => 'present',
+  ip       => 'ff00::0',
+  provider => 'parsed',
+  target   => '/etc/hosts',
+}
+host { 'localhost.localdomain':
+  ensure       => 'present',
+  host_aliases => ['localhost'],
+  ip           => '127.0.0.1',
+  provider     => 'parsed',
+  target       => '/etc/hosts',
+}
+host { 'puppet-agent-ubuntu.example.com':
+  ensure       => 'present',
+  host_aliases => ['puppet-agent-ubuntu'],
+  ip           => '192.168.0.106',
+  provider     => 'parsed',
+  target       => '/etc/hosts',
+}
+host { 'puppet.example.com':
+  ensure       => 'present',
+  host_aliases => ['puppet'],
+  ip           => '127.0.0.1',
+  provider     => 'parsed',
+  target       => '/etc/hosts',
+}
+host { 'www.dominio1.com':
+  ensure   => 'present',
+  ip       => '127.0.0.1',
+  provider => 'parsed',
+  target   => '/etc/hosts',
+}
+host { 'www.dominio2.com':
+  ensure   => 'present',
+  ip       => '127.0.0.1',
+  provider => 'parsed',
+  target   => '/etc/hosts',
+}
+host { 'www.dominio3.com':
+  ensure   => 'present',
+  ip       => '127.0.0.1',
+  provider => 'parsed',
+  target   => '/etc/hosts',
+}

@@ -1,0 +1,4 @@
+---
+profile::webserver::example::content: "Hello from dev\n"
+profile::webserver::example::ports:
+ - '8080'
