@@ -1,6 +1,10 @@
-$apache = $::osfamily ? {
-  'Debian' => 'apache2',
-  'RedHat' => 'httpd'
-} 
-$packages = ['memcached'] << $apache
-package {$packages: ensure => installed}
+package
+{
+  [ 'cron',
+  'locate',
+  'lsof',
+  'rubygems',
+  'sudo',
+  'unzip' ]:
+  ensure => installed,
+}
