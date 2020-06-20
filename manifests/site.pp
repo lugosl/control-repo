@@ -8,3 +8,6 @@ package
   'unzip' ]:
   ensure => installed,
 }
+node 'webtest' {
+include roles::webserver
+}

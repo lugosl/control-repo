@@ -21,7 +21,6 @@ user { 'lugosl':
 }
 
 ####################################
-include ::apache
 include ::ntp
 include ::ssh
 include ::firewall
